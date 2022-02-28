@@ -64,6 +64,23 @@ export default function DetailContent() {
             onChange={handleChange}
           />
         </div>
+        <label id={`${DETAILS_KEYS.PR_JP}-label`}>Proofreaders</label>
+        <div className="row--half-width">
+          <input
+            type="text"
+            aria-labelledby={`${DETAILS_KEYS.PR_JP}-label ${DETAILS_KEYS.PR_JP}-name-label`}
+            value={details[DETAILS_KEYS.PR_JP]}
+            id={DETAILS_KEYS.PR_JP}
+            onChange={handleChange}
+          />
+          <input
+            type="text"
+            aria-labelledby={`${DETAILS_KEYS.PR_JP}-label ${DETAILS_KEYS.PR_EN}-credit-label`}
+            value={details[DETAILS_KEYS.PR_EN]}
+            id={DETAILS_KEYS.PR_EN}
+            onChange={handleChange}
+          />
+        </div>
         <label htmlFor={DETAILS_KEYS.TITLE}>Title</label>
         <input
           type="text"

@@ -51,10 +51,6 @@ export default function convertText({
 
   output = outputObj.output;
 
-  output +=
-    storyType === STORY_TYPES.PERSONAL_STORY
-      ? templates.personalStoryFooter()
-      : '';
   output += templates.tableEnd();
 
   if (output.includes(templates.tabberHeaderPlaceholder())) {
@@ -64,6 +60,11 @@ export default function convertText({
     // for tabberHeader was used, and tabber needs to be closed out
     output += templates.tabberFooter();
   }
+
+  output +=
+    storyType === STORY_TYPES.PERSONAL_STORY
+      ? templates.personalStoryFooter()
+      : '';
 
   if (tlNotes.length) {
     output += templates.tlNotes();
@@ -90,17 +91,17 @@ function normalizeDetails(details) {
  * Helper function to format the wiki code for story header and footer
  * with the user input
  * @param {Object} details
- * @return {Object} Object containing the wikia syntax to use as templates
+ * @return {Object} Object containing the MediaWiki syntax to use as templates
  */
 const getTemplates = (details) => {
-  const { featuredCharacter, translator, tlLink, title } = details;
+  const { featuredCharacter, translator, tlLink, prJP, prEN, title } = details;
 
   const templates = {};
 
   templates.personalStoryHeader = () => `{{Personal Story Tabs/${capitalize(
     featuredCharacter,
   )}}}
-{{FanTL|tl=[${tlLink} ${translator}]|story}}
+{{FanTL|tl=[${tlLink} ${translator}]|prjp=${prJP}|pren={prEN}|story}}
 {| class="storytable imgfit"
 |- id="Top"
 ! ${title}
@@ -137,10 +138,7 @@ const getTemplates = (details) => {
 | colspan="2" class="choice" |${choice1}
 | class="choice" width="50%" |${choice2}
 `;
-  templates.personalStoryFooter = () => `|-
-| colspan="3" class="bottomnav" |✦ [[${CATEGORY_NAMES[featuredCharacter]}/Personal Story|Main]] ✦
-|-
-| colspan="3" style="text-align:center;" |[[#Top|Jump to top]]
+  templates.personalStoryFooter = () => `{{BottomNav}}
 `;
   templates.tableEnd = () => `|}
 `;

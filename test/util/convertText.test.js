@@ -50,8 +50,8 @@ describe.skip('convertText', () => {
     };
     details = {
       [DETAILS_KEYS.STORY_TYPE]: STORY_TYPES.PERSONAL_STORY,
-      [DETAILS_KEYS.TRANSLATOR]: 'Mandy',
-      [DETAILS_KEYS.TL_LINK]: 'https://mandytl.dreamwidth.org/28341.html',
+      [DETAILS_KEYS.TRANSLATOR]: 'Bluemorpho',
+      [DETAILS_KEYS.TL_LINK]: 'https://twistedwonderland.miraheze.org/wiki/User:Bluemorpho',
       [DETAILS_KEYS.TITLE]: 'Test Title',
       [DETAILS_KEYS.FEATURED_CHARACTER]: 'FLOYD',
     };
