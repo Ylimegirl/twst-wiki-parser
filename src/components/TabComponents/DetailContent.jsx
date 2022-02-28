@@ -64,6 +64,21 @@ export default function DetailContent() {
             onChange={handleChange}
           />
         </div>
+        <span />
+        <div className="row--half-width row--label-only">
+          <label
+            className="label--small"
+            id={`${DETAILS_KEYS.PR_JP}-name-label`}
+          >
+            English Proofreader
+          </label>
+          <label
+            className="label--small"
+            id={`${DETAILS_KEYS.PR_EN}-credit-label`}
+          >
+            Japanese Proofreader
+          </label>
+        </div>
         <label id={`${DETAILS_KEYS.PR_JP}-label`}>Proofreaders</label>
         <div className="row--half-width">
           <input

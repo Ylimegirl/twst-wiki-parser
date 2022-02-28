@@ -101,7 +101,7 @@ const getTemplates = (details) => {
   templates.personalStoryHeader = () => `{{Personal Story Tabs/${capitalize(
     featuredCharacter,
   )}}}
-{{FanTL|tl=[${tlLink} ${translator}]|prjp=${prJP}|pren={prEN}|story}}
+{{FanTL|tl=[${tlLink} ${translator}]|prjp=${prJP}|pren=${prEN}|story}}
 {| class="storytable imgfit"
 |- id="Top"
 ! ${title}
