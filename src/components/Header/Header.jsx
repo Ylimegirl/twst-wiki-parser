@@ -33,7 +33,7 @@ export default function Header() {
               className="star-link"
               target="_blank"
               rel="noreferrer"
-              href="https://github.com/myang5/twst-wiki-parser/issues"
+              href="https://github.com/Ylimegirl/twst-wiki-parser/issues"
             >
               KNOWN ISSUES
             </a>
@@ -43,7 +43,7 @@ export default function Header() {
               className="star-link"
               target="_blank"
               rel="noreferrer"
-              href="https://twitter.com/gayandasleep"
+              href="https://twitter.com/EmilyLrig"
             >
               CONTACT
             </a>
@@ -53,7 +53,7 @@ export default function Header() {
               className="star-link"
               target="_blank"
               rel="noreferrer"
-              href="https://github.com/myang5/twst-wiki-parser"
+              href="https://github.com/Ylimegirl/twst-wiki-parser"
             >
               GITHUB
             </a>

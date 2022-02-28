@@ -17,14 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/myang5/twst-wiki-parser.git"
+    "url": "git+https://github.com/Ylimegirl/twst-wiki-parser.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/myang5/twst-wiki-parser/issues"
+    "url": "https://github.com/Ylimegirl/twst-wiki-parser/issues"
   },
-  "homepage": "https://github.com/myang5/twst-wiki-parser#readme",
+  "homepage": "https://github.com/Ylimegirl/twst-wiki-parser#readme",
   "dependencies": {
     "@babel/core": "^7.10.3",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
