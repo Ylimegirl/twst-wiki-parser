@@ -70,13 +70,13 @@ export default function DetailContent() {
             className="label--small"
             id={`${DETAILS_KEYS.PR_JP}-name-label`}
           >
-            English proofreader
+            Japanese proofreader
           </label>
           <label
             className="label--small"
             id={`${DETAILS_KEYS.PR_EN}-credit-label`}
           >
-            Japanese proofreader
+            English proofreader
           </label>
         </div>
         <label id={`${DETAILS_KEYS.PR_JP}-label`}>Proofreaders</label>
