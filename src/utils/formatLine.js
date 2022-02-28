@@ -39,9 +39,6 @@ export default function formatLine({
       } else {
         currentName = '';
         return (
-          (storyType === STORY_TYPES.PERSONAL_STORY
-            ? templates.personalStoryFooter()
-            : '') +
           templates.tableEnd() +
           templates.partLine(outputObj.partCount) +
           templates.tableStart()
