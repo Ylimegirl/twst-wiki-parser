@@ -1,6 +1,6 @@
 # twst-wiki-parser
 
-A simple formatter that takes in translators' dialogue and converts it into source code for a new page on the Twisted Wonderland Miraheze wiki.
+A simple formatter that takes in translators' dialogue and converts it into source code for a new page on the Twisted Wonderland Wiki.gg wiki.
 
 Link: https://ylimegirl.com/twst-wiki-parser/
 
